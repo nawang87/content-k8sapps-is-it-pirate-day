@@ -1,6 +1,7 @@
 added_items.log
 uloe.log
 .DS_Store
+public/__ENV.js
 
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
