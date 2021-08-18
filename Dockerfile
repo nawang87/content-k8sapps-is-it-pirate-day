@@ -11,5 +11,8 @@ COPY --from=build /usr/src/app/build build/
 
 
 
-EXPOSE 3000
-CMD ["serve", "build"]
+
+
+EXPOSE 5000
+ENTRYPOINT yarn react-env --env APP_ENV
+CMD yarn start
