@@ -9,6 +9,7 @@ FROM node:16.6.2-alpine3.11 as main
 WORKDIR /usr/src/app
 COPY --from=build /usr/src/app/build build/
 COPY --from=build /usr/src/app/.env ./
+COPY --from=build /usr/src/app/cleanup.js ./
 RUN yarn global add @beam-australia/react-env
 RUN yarn global add serve
 
